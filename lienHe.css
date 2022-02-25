@@ -1,0 +1,131 @@
+.abc{
+    color: red;  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+body{
+    margin: 0;
+    background: #FFCBCB;
+}   
+.container{
+    width: 980px;
+    margin: auto; /*căn lề*/
+}
+img{
+    width:100%;
+}
+header .top-nav img{
+    width: 30%;
+    margin: 20px 0;
+}
+header{
+    text-align: center;
+}
+header ul{
+    background-color: #FF5959;
+}
+header .bottom-nav{
+  
+    background:#FF5959 ;
+    text-align: center;
+}
+header ul{
+    margin: 0;
+}
+header ul li{
+    list-style: none; /*// dùng để bỏ dấu chấm*/
+    display: inline-block; /*inline là cùng dọc, con block như là cái khối í, nó xếp theo dọc, inline-block là vùa có thể xép ngang và dọc*/
+    /* margin: 10px; dãn cách| 10px = top 10px, right 10px, botton 10px, left 10px  | đây là cách  viết ngắn ngọn */
+    padding: 5px 10px;
+    /* border-right: 1px solid white; gạch dọc */
+    
+}
+header a{
+    text-decoration: none; /*bỏ dấu gạch chân*/
+    font-size: 18px;
+    text-transform: capitalize; /*dịnh dạng chữ| HOA, thường: viết hoa chữ cái đầu của từ*/
+    color:white;
+}
+header a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+header li:hover{
+    background: #FF9292;
+}
+header ul ul{
+    position: absolute;
+    width: 150px;
+    margin: 5px 0 0 0;
+    padding: 0 0 0 7px;
+    display: none;
+    text-align: left;
+}
+header ul li:hover ul{
+    display: block;
+}
+header ul ul a{
+    background-color: #FF5959;
+    color: white;   
+    display: block; 
+    
+}
+header li li:hover{
+    background: #FF5959;
+    text-decoration: underline;
+
+}
+header ul ul a:hover{
+    background-color: #FF9292;
+    color: orangered;
+}
+.container .main .about img{
+    width: 50px;
+    height: 50px;
+    margin: 20px 5px 0 5px;
+}
+h2{
+    margin: 0;
+    padding: 7px;
+    text-align: center;
+    font-family: Cambria;
+    color:#FF5151;
+}
+.video{
+/*     
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iframe1{
+    margin-right: 10px;
+}
+.container .main .about{
+    background: #F999B7;
+    text-align: center;
+    padding: 15px 20px 0 20px;
+}
+footer{
+    display: grid;  /*hiển thị dạng lưới*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+}
+footer .left, .mid, .right{
+    text-align: center;
+}
+footer{
+    display: grid; 
+    grid-template-columns: 350px 1fr 1fr;
+    grid-gap: 20px;
+    background: #FFEBCC;
+  }
+footer left, right, li, footer h3{
+    list-style: none;
+    text-align: left;
+    padding-left: 15px;    
+}
+
